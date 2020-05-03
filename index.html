@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <title>ResumeDetailer</title>
+    <h6> A work in progress <br> Choose the resume file in pdf file and upload it. Wait for 2 secs and then click get Details</h6>
+<form id        =  "uploadForm"
+     enctype   =  "multipart/form-data"
+     action    =  "/api/photo"
+     method    =  "post"
+     enctype = "multipart/form-data"
+>
+<input type="file" name="userPhoto" />
+<input type="submit" value="Upload File" name="submit">
+</form>
+
+<form id="callResume" action="/getResume" method="GET">
+    <input type="submit" value="get Details" name="details">
+</form>
+</html>
